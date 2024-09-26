@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body style="background-color: darkslategrey;">
+    <center><h1 style="color: aliceblue;">Kergit Brute Force Login Page</h1></center>
+    <div class="login">
+      <center><p>Username</p></center>
+      <center><input type="text" id="userName"></center>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <center><p>Password</p></center>
+      <center><input type="password" id="passWord"></center>
+      <br>
+      <center><input type="submit" onclick="giris()" id="subMit" value="Login"></center>
+    </div>
+
+    
+    <style>
+        .login{
+            background-color: aliceblue;
+            height: 350px;
+            width: 250px;
+            border: 2px solid black;
+            margin-left: 650px;
+            margin-top: 10%;
+        }
+
+    </style>
+    <script>
+        function giris() {
+            const userName = document.getElementById('userName').value;
+            const passWord = document.getElementById('passWord').value;
+
+            if (userName === 'admin' && passWord === 'admin') {
+                window.location.href = 'home.html';
+            }
+        }
+    </script>
+</body>
+</html>
